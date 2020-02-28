@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Anton&display=swap);
+body {
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.sbuttons {
+  bottom: 5%;
+  position: fixed;
+  margin: 1em;
+  left: 0;
+}
+.sbutton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 20px auto 0;
+  box-shadow: 0px 5px 11px -2px rgba(54, 51, 51, 0.658), 0px 4px 12px -7px rgba(48, 45, 45, 0.507);
+  cursor: pointer;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  position: relative;
+}
+.sbutton > i {
+  font-size: 38px;
+  line-height: 60px;
+  transition: all .2s ease-in-out;
+  transition-delay: 2s;
+}
+.sbutton:active,
+.sbutton:focus,
+.sbutton:hover {
+  box-shadow: 0 0 4px rgb(248, 235, 235), 0 4px 8px rgba(122, 71, 71, 0.644);
+}
+.sbutton:not(:last-child) {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto 0;
+  opacity: 0;
+}
+.sbutton:not(:last-child) > i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all .3s ease-in-out;
+}
+.sbuttons:hover .sbutton:not(:last-child) {
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto 0;
+}
+.sbutton:nth-last-child(1) {
+  -webkit-transition-delay: 25ms;
+  transition-delay: 25ms;
+}
+.sbutton:not(:last-child):nth-last-child(2) {
+  -webkit-transition-delay: 20ms;
+  transition-delay: 20ms;
+}
+.sbutton:not(:last-child):nth-last-child(3) {
+  -webkit-transition-delay: 40ms;
+  transition-delay: 40ms;
+}
+.sbutton:not(:last-child):nth-last-child(4) {
+  -webkit-transition-delay: 60ms;
+  transition-delay: 60ms;
+}
+.sbutton:not(:last-child):nth-last-child(5) {
+  -webkit-transition-delay: 80ms;
+  transition-delay: 80ms;
+}
+.sbutton:not(:last-child):nth-last-child(6) {
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+ 
+[tooltip]:before {
+  font-family: 'Roboto';
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: #ffffff;
+  content: attr(tooltip);
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 5px 7px;
+  margin-left: 10px;
+  position: absolute;
+  left: 100%;
+  bottom: 20%;
+  white-space: nowrap;
+}
+ 
+[tooltip]:hover:before,
+[tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+.sbutton.mainsbutton {
+  background: #2ab1ce;
+}
+.sbutton.gplus {
+  background: #F44336;
+}
+.sbutton.pinteres {
+  background: #e60023;
+}
+.sbutton.twitt {
+  background: #03A9F4;
+}
+.sbutton.fb {
+  background: #3F51B5;
+}
+.sbutton.whatsapp {
+  background: #00e676;
+}
+
+.jumbotron, .contact {
+  color: black;
+}
+.link-white {
+  font-weight: lighter; 
+  color:azure;
+}
+
+.link-white:hover {
+  font-weight: lighter; 
+  color:rgba(223, 181, 65, 0.849);
+}
+.footer_style{
+  
+  opacity: 0.9;
+  /* background-image: url(../images/dumbell.jpg);
+  /* width : 900;
+  background-size: 100% 100% ;
+  background-repeat: no-repeat ; */
+  background: url(../images/dumbell.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  /* background :url(../images/dumbell.jpg);
+  background-repeat: no-repeat;
+  width: 500;
+  height: 200; */
+}
+
+.nav_style{
+  background :url(../images/n2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-repeat: repeat;
+  background-position: top;  */
+  /* background-attachment: ; */
+  /* width: 500;
+  height: 200;
+  opacity: 1; */
+}
+/* h1{
+	color: #e71809;
+}
+
+@import url("https://mdbreact/dist/css/mdb.css"); */
+/* *{padding:0;margin:0;} */
+
+/* body{
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:rgb(37, 26, 26);
+	font-size:12px; 
+}*/
+/* .label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+} */
+/* .label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+} */
+
+/* .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#F33;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+ul{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+ul li{
+	list-style:none;
+	margin-bottom:10px;
+} */
+/*
+ul li a{
+	background-color:#F33;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:60px;
+	height:60px;
+	display:block;
+} */
+
+/* ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+} */
+/* 
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a#menu-share + ul{
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+} */

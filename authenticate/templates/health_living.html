@@ -1,0 +1,44 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block content %}
+<html>
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Health Living Page</h1><br>
+                  <p class="lead">“It is health that is the real wealth, and not pieces of gold and silver.” </p>
+                </div>
+              </div>
+    <h3><p>HEALTH REPORT :</p></h3>
+    <p>Name   : {{ user.first_name }} {{ user.last_name }} </p>
+    <p>Age    : {{ user.userprofile.wt }}</p>
+    <p>Weight : {{ user.userprofile.wt }} Kg</p>
+    <p>Height : {{ user.userprofile.height }} cm</p>
+    <p>BMI    : {{ user.userprofile.age}}</p>
+    <p>Calories : {{ user.userprofile.calories }}</p>
+
+    <h3>Nutrition is important for fitness</h3><br>
+    <p>Eating a well-balanced diet can help you get the calories and nutrients you need to fuel your daily activities, including regular exercise.
+    </p><p>When it comes to eating foods to fuel your exercise performance, it’s not as simple as choosing vegetables over doughnuts. You need to eat the right types of food at the right times of the day.</p>
+
+    <p>Learn about the importance of healthy breakfasts, workout snacks, and meal plans.</p><br>
+    <br>
+    <img class="card-img-top" src="{% static 'images/d2.jpg' %}" alt="Card image cap"><br><br>
+
+    <h3>Get off to a good start</h3><br>
+    <p>Your first meal of the day is an important one.</p>
+    <p>According to an article published in Harvard Health Letter, eating breakfast regularly has been linked to a lower risk of obesity, diabetes, and heart disease. Starting your day with a healthy meal can help replenish your blood sugar, which your body needs to power your muscles and brain.</p>
+    <p>Eating a healthy breakfast is especially important on days when exercise is on your agenda. Skipping breakfast can leave you feeling lightheaded or lethargic while you’re working out.</p><br>
+    <br>
+    <!-- <h3></h3><br>
+    <p></p><br> -->
+    <img class="card-img-top" src="{% static 'images/diet1.jpg' %}" alt="Card image cap"><br><br>
+
+    <h3></h3><br>
+    <!-- <p></p><br>
+    <h3></h3><br>
+    <p></p><br> -->
+
+
+
+    </html>
+{% endblock %}

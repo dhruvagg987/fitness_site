@@ -1,0 +1,32 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block content %}
+<html>
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Fluid jumbotron</h1>
+                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+              </div>
+    <h2 class="contact">Contact page</h2>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+</html>
+
+<!-- <a href="#" class="float" id="menu-share">
+    <i class="fa fa-share my-float"></i>
+    </a>
+    <ul>
+    <li><a href="#">
+    <i class="fa fa-facebook my-float"></i>
+    </a></li>
+    <li><a href="#">
+    <i class="fa fa-google-plus my-float"></i>
+    </a></li>
+    <li><a href="#">
+    <i class="fa fa-twitter my-float"></i>
+    </a></li>
+    </ul> -->
+{% endblock %}

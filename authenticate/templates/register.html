@@ -1,0 +1,27 @@
+{% extends 'templates/base.html' %}
+{% block content %}
+<br><br>
+<h2 class="text-center">Create Your Account</h2><br/>
+<div class="col-md-6 offset-md-3">
+    <form method="POST">
+        {% csrf_token %}
+        {% if form.errors %}
+            <div class="alert alert-warning alert-dismissable" role="alert">
+                <button class="close" data-dismiss="alert">
+                  <small><sup>x</sup></small>
+                </button>
+                <p>Your form has errors.</p>
+            </div>
+                     
+        {% endif %}
+
+        {{ form.as_p }}
+        {{ profile_form.as_p }}
+
+        <input type="submit" value="Sign up" class="btn btn-secondary">
+
+    </form>
+    <br><br><br><br><br><br>
+</div>
+
+{% endblock %}

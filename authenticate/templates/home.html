@@ -1,0 +1,162 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block content %}
+</div>
+
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style> -->
+</head>
+
+<body>
+ 
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/tom.jpg' %}" alt="Los Angeles" width="1520" height="700">
+        <div class="carousel-caption">
+          <h3>WORKOUT</h3>
+          <p>"Train insane or remain same."</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/2.jpg' %}" alt="Chicago" width="1520" height="700">
+        <div class="carousel-caption">
+          <h3>YOGA</h3>
+          <p>"Start Doing Yoga Everyday And Be The Best Version Of You .</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/a.jpeg' %}" alt="New York" width="1520" height="700">
+        <div class="carousel-caption">
+          <h3>"The Miracle isn't that I finished . The miracle is that i had the Courage to Start ."</h3>
+          <p></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="{% static 'images/diet1.jpg' %}" alt="New York" width="1520" height="700">
+          <div class="carousel-caption">
+            <h3>HEALTHY MEAL</h3>
+            <p>Diet Plan and Recipes According To Your Reqirements .</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{% static 'images/monitor.jpeg' %}" alt="New York" width="1520" height="700">
+            <div class="carousel-caption">
+              <h3>HEALTH MONITORING</h3>
+              <p>Personalised BMI And Calorie Intake Guides </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/wow.jpg' %}" alt="New York" width="1520" height="700">
+              <div class="carousel-caption">
+                <h3>NO PAIN NO GAIN</h3>
+                <p></p>
+              </div>
+          </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/thor.jpg' %}" alt="New York" width="1520" height="700">
+              <div class="carousel-caption">
+                <h3>"Life Is Not Merely Being Alive , But Bieng Well"</h3>
+                <p></p>
+              </div>
+        </div>  
+        
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div class="container">
+
+
+  <!-- {% if user.is_authenticated %}
+  <p>name : {{ user.first_name }} {{ user.last_name }} </p>
+  <p>username: {{ user.username}}</p>
+  <p>email : {{ user.email}}</p>
+  <p>weight : {{ user.userprofile.wt }}</p>
+  <p>age : {{ user.userprofile.age }}</p>
+  {% endif %} -->
+
+  <!-- <div class="col s12 m7 l5">
+      <h2 class="header">Horizontal Card</h2>
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="{% static 'images/wow.jpg' %}">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <br><br>
+    <h1 style="font-family: 'Indie Flower',cursive ; ">WHY WORKOUT ??</h1><br>
+    <img class="card-img-top" src="{% static 'images/thor.jpg' %}" alt="Card image cap"><br>
+
+    
+    <!-- <div class="col s4" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/thor.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Quick sample text to create the card title and make up the body of the card's
+                content.</p>
+        </div> -->
+        <br>
+       <h3> 1. Because it makes you happy.</h3><br>
+        <p>You’ll feel awesome after you exercise. Immediately. Intensely. Unequivocally. Study after study confirms the direct relationship between exercise and an increase in feel-good hormones—one study found high-intensity exercise has a similar impact on your brain to cocaine.Trusted Source (That’s gotta feel good.) Other research suggests physical activity can help manage depression.Trusted 
+          </p>
+        <br>
+        <h3> 2. Because it makes your life easier.
+          </h3><br>
+        <p>Being stronger, leaner, happier, and more capable can make for a better life. Case in point: Your boss needs you to lift that heavy box? Yes, ma’am, you can. Your neighbor needs help rearranging furniture? Damn right, buddy, you’ll move that couch. Your friend needs to be carried home from the bar? Saddle up, cowboy.</p>
+        <p>Training increases your capabilities. That’s the law of progressive overload—lift something a little bit heavier each day, get a little bit stronger. Run a little faster each day, get a little bit, um, faster.</p>
+        <br>
+        <h3> 3. Because it helps you win at life.</h3><br>
+        <p>Setting and achieving fitness goals helps you set and achieve goals in every other aspect of your life. The goal-setting/goal-accomplishing cycle is a learned trait. From a very early age, winners reinforce a simple idea: If they set their mind to something and work tirelessly toward its accomplishment, the outcome will be positive.</p>    
+
+   <br>
+  <!-- <h1>This is the home page</h1>
+  <h5>BY Dhruv Aggarwal</h5>
+
+  <body>https://colorlib.com/wp/free-fitness-website-templates/</body> -->
+  <br>
+  <br>
+  {% endblock %}
